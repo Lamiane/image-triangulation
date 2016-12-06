@@ -13,7 +13,6 @@ def length(edge):
     return np.sqrt(x_length**2 + y_length**2)
 
 
-# TODO testing!
 def get_points_on_edge(n, edge):
 
     interval_x = np.float(np.abs(edge[0][x]-edge[1][x]))/(n+1)  # +1 we want n points INSIDE edge
@@ -78,3 +77,11 @@ def get_points_in_triangle(triangle):
             points.extend(product([xx], y_range))
 
     return set(points)
+
+
+def covariance(triangle):
+    pass
+
+
+def field(triangle):
+    return len(get_points_in_triangle(triangle))
